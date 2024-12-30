@@ -1,0 +1,161 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .form_container{
+            /* display: flex; */
+            justify-content: space-between;
+            
+        }
+        .form{
+            width: 45%;
+        }
+        .form_group{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form_group label{
+            display: inline-block;
+            width: 150px;
+        }
+        .form_group input ,.form_group select ,.form_group textarea{
+            width: 200px;
+        }
+        .form_group input[type="radio"]{
+            width: auto;
+        }
+        textarea{
+            height: 60px;
+            width: 200px;
+        }
+        .buttons{
+        margin-left: 100px;
+        }
+        .f1{
+            float: left;
+        }
+        .f2{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="form_container">
+    <div class="form f1">
+            <h1>STUDENT REGISTRATION FORM</h1>
+        <form>
+            <div class="form_group">
+                <label>FULL NAME :</label>
+                    <input type="text" name="FULL NAME">
+            </div>
+            <div class="form_group">
+                <label>Email :</label>
+                    <input type="text" name="Email">
+            </div>
+            <div class="form_group">
+                <label>Moblie No :</label>
+                    <input type="text" name="Moblie No">
+            </div>
+            <div class="form_group">
+                <label>address :</label>
+                    <textarea name="address" id="address"></textarea>
+            </div>
+            <div class="form_group">
+                <label>nationality:</label>
+                    <input type="text" name="nationality">
+            </div>
+            <div class="form_group">
+                <label>date of birth : </label>
+                    <input type="date" value="date of birth">
+            </div>
+            <div class="form_group">
+                <label>gender:</label>
+                <input type="radio" name="gender" value="male">male
+                <input type="radio" name="gender" value="female">female
+            </div>
+            <div class="form_group">
+                <label>highest degree:</label>
+                    <select name="highest degree">
+                        <option value="">select degree</option>
+                        <option value="PhD">PhD</option>
+                        <option value="Mtech">Mtech</option>
+                        <option value="Msc">Msc</option>
+                        <option value="MCA">MCA</option>
+                    </select>
+            </div>
+            <div class="form_group">
+                <label>CPI :</label>
+                    <input type="text" name="CPI">
+            </div>
+            <div class="form_group">
+                <label>university :</label>
+                    <input type="text" name="university">
+            </div>
+            <div class="form_group">
+                <label>passing year:</label>
+                    <select name="passing year">
+                        <option value=""> select year</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+            </div>
+            <div class="buttons">
+                <input type="submit" name="cmdsubmit" value="submit">
+                <input type="reset" name="cmdreset" value="cancel">
+            </div>
+        </form>
+    </div>
+    <div class="form f2">
+    <form>
+           <h2>COVID 19 VACCINE REGISTRATION FORM</h2>
+           <div class="form_group">
+                <label>First Name :</label>
+                <input type="text" id="First Name" value="">
+            </div>
+            <div class="form_group">
+                <label>Last Name :</label>
+                <input type="text" id="Last Name" value="">
+            </div>
+            <div class="form_group">
+                <label>adhaar number :</label>
+                <input type="text" id="adhaar number" value="">
+            </div>
+            <div class="form_group">
+                <label>VACCINE NAME :</label>
+                <select name="VACCINE NAME">
+                    <option value="">select Name</option>
+                    <option value="covccine">covccine</option>
+                    <option value="covisheild">covisheild</option>
+                </select>
+            </div>
+            <div class="form_group">
+                <label>VACCIATION CENTER :</label>
+                <select name="VACCINE CENTER">
+                    <option value="">select Name</option>
+                    <option value="covccine">JAMNAGAR</option>
+                    <option value="covisheild">RAJKOT</option>
+                </select>
+            </div>
+            <div class="form_group">
+                <label>date o dose :</label>
+                <input type="date" value="date of dose">
+            </div>
+            <div class="form_group">
+                <label>dose number :</label>
+                <input type="number" value="dose number">
+            </div>
+            <div class="buttons">
+                <input type="submit" name="cmdsubmit" value="click here">
+                <input type="reset" name="cmdreset" value="cancel">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

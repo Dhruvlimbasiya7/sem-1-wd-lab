@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.gradient-container {
+    display: flex;
+    justify-content: center;
+    background-color: fuchsia;
+    border: 1px;
+}
+
+.gradient-box { 
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-image: linear-gradient(to right, cyan, crimson); 
+}

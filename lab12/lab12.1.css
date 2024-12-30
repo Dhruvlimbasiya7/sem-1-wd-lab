@@ -1,0 +1,24 @@
+p::first-line{
+    background-color: cyan;
+    color: crimson;
+    font-size: 20px;
+}
+p::first-letter{
+    background-color: lightpink;
+    color: cornflowerblue;
+    font-size: 40px;
+}
+a::before{
+    color: red;
+}
+a::after{
+    color: black;
+}
+::selection{
+    background-color: aqua;
+    color: darkgrey;
+}
+p:hover{
+    background-color: blue;
+    color: white;
+}
